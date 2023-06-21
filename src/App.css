@@ -1,0 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+p,
+a,
+label,
+button {
+    font-family: 'Arbutus Slab', serif;
+}
+
+.btn-style {
+    background-color: #000;
+    color: #fff;
+    border-style: none;
+    padding: 5px 12px 8px 12px;
+}

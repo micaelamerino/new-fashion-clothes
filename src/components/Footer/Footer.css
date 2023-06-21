@@ -1,0 +1,21 @@
+footer {
+    padding-top: 15px;
+    box-shadow: 0px -9px 7px -10px rgba(0, 0, 0, 0.81);
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.img-conteiner>img {
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+}
+
+@media screen and (min-width:768px) {
+    .footer-content {
+        justify-content: space-evenly;
+    }
+}

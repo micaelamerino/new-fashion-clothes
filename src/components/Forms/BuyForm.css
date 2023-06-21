@@ -1,0 +1,11 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (min-width:576px) {
+    .form-buy {
+        width: 60%;
+    }
+}

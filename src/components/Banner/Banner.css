@@ -1,0 +1,11 @@
+.banner-container{
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px){
+    .banner-container {
+        justify-content: space-evenly;
+    }
+}
