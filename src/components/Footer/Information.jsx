@@ -8,7 +8,7 @@ const Information = () => {
     <>
       <div>
         <h5>Medios de pago</h5>
-        <div className="d-flex gap-1">
+        <div className="d-flex gap-2">
           <div className="img-conteiner">
             <img
               src={banelco}

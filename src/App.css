@@ -14,8 +14,12 @@ button {
 }
 
 .btn-style {
-    background-color: #000;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: #fff;
     border-style: none;
     padding: 5px 12px 8px 12px;
+}
+
+.btn-style:hover{
+    background: linear-gradient(to right, #0f2027e5, #203a43ee, #2c5364ee);
 }

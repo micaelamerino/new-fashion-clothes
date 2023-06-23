@@ -18,7 +18,7 @@ const ContactForm = () => {
     }
 
   return (
-    <form className="d-flex flex-column gap-1" onSubmit={handleSubmit(obtenerDatos)}>
+    <form className="d-flex flex-column gap-1 mb-3" onSubmit={handleSubmit(obtenerDatos)}>
       <h2>Cómo podemos ayudarte?</h2>
       <div className="d-flex flex-column">
         <label htmlFor="name">Nombre</label>

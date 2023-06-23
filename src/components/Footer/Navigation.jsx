@@ -3,7 +3,7 @@ const Navigation = () => {
   return (
     <>
       <h5>Navegación</h5>
-      <div className="d-flex flex-column m-1">
+      <div className="links-footer d-flex flex-column gap-2">
         <Link to={"/"}>Home</Link>
         <Link to={"/productos"}>Productos</Link>
         <Link to={"/contacto"}>Contacto</Link>

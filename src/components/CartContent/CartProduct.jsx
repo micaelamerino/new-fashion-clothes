@@ -8,10 +8,12 @@ const CartProduct = () => {
 
   const { cart, total } = useContext(Context);
 
+  const minValue = 15000;
+
   const navigate = useNavigate();
 
   const handleClick = () => {
-    total < 15000
+    total < minValue
       ? Swal.fire({
         html:"<div><h3>No puede continuar hasta alcanzar el monto mínimo</h3></div>",
         confirmButtonColor:"black"
@@ -35,7 +37,7 @@ const CartProduct = () => {
           ))}
       </section>
       <div>
-        {total < 15000 && (
+        {total < minValue && (
           <p style={{ color: "red", marginBottom: 0 }}>
             *El monto mínimo de compra es de $15000
           </p>

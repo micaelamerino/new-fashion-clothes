@@ -33,9 +33,9 @@ const Products = () => {
   };
 
   return (
-    <main className="container d-flex flex-column flex-wrap mt-3">
+    <main className="container d-flex flex-column flex-wrap mt-2">
       <div>
-        <h1>Autumn-winter collection </h1>
+        <h1>Colección otoño-invierno </h1>
         <section className="d-flex flex-wrap gap-1 mb-3">
           <h4>Aplicar filtro</h4>
           <div className="d-flex flex-wrap gap-1 justify-content-start">
@@ -55,21 +55,27 @@ const Products = () => {
           </div>
         </section>
       </div>
-      <section className="d-flex flex-wrap gap-3 justify-content-evenly mb-3">
-        {product.length > 0 ?
+      <section className="row">
+        {product.length > 0 ? (
           product.map((p) => (
-            <article key={p.id}>
+            <article
+              key={p.id}
+              className="col-md-6 col-lg-4 col-xl-3 d-flex flex-column align-items-center mb-2"
+            >
               <Image image={p.image} name={p.name} />
               <h3>{p.name}</h3>
               <p>
                 <b>$ {p.price}</b>
               </p>
-              <div className="d-flex justify-content-center gap-1">
+              <div className="d-flex justify-content-center gap-1 mb-2">
                 <AddButton product={p} />
                 <DetailsButton product={p} />
               </div>
             </article>
-          )):<h3>{error}</h3>}
+          ))
+        ) : (
+          <h3>{error}</h3>
+        )}
       </section>
     </main>
   );

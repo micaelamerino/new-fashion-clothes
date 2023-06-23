@@ -13,23 +13,29 @@ const Featured = () => {
   }, [data]);
 
   return (
-    <main className="container d-flex flex-column flex-wrap gap-3 align-items-center text-center">
-      <div>
-        <h1>Productos Destacados</h1>
-        <p>¡Los últimos ingresos están aquí!</p>
-      </div>
-      <section className="d-flex flex-wrap gap-3">
-        {newProducts.length>0 ?
+    <main className="container text-center">
+      <h1>Productos Destacados</h1>
+      <p>¡Los últimos ingresos están aquí!</p>
+      <section className="row">
+        {newProducts.length > 0 ? (
           newProducts.map((p) => (
-            <article key={p.id}>
+            <article
+              key={p.id}
+              className="col-md-6 col-lg-4 col-xl-3 d-flex flex-column gap-2  align-items-center mb-2"
+            >
               <h3>{p.name}</h3>
-              <Image image={p.image} name={p.name}/>
-              <p>
-                <b>$ {p.price}</b>
-              </p>
+              <div className="position-relative">
+                <Image image={p.image} name={p.name} />
+                <div className="position-absolute top-0 start-100">
+                  <p className="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2">NEW</p>
+                </div>
+              </div>
               <DetailsButton product={p} />
             </article>
-          )):<h3>{error}</h3>}
+          ))
+        ) : (
+          <h3>{error}</h3>
+        )}
       </section>
     </main>
   );
