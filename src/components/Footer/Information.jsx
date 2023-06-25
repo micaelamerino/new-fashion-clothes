@@ -7,7 +7,7 @@ const Information = () => {
   return (
     <>
       <div>
-        <h5>Medios de pago</h5>
+        <h4>Medios de pago</h4>
         <div className="d-flex gap-2">
           <div className="img-conteiner">
             <img
@@ -44,7 +44,7 @@ const Information = () => {
         </div>
       </div>
       <div>
-        <h5>Formas de envío</h5>
+        <h4>Formas de envío</h4>
         <div className="img-conteiner">
           <img
             src={oca}

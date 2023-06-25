@@ -5,7 +5,7 @@ import map from "./map.svg";
 const ContactMeans = () => {
   return (
     <>
-      <h5>Contáctanos</h5>
+      <h4>Contáctanos</h4>
       <div className="d-flex align-items-center gap-2 m-1">
         <img src={phone} alt="Icono de teléfono" />
         <p className="mb-0">(011)123-123</p>

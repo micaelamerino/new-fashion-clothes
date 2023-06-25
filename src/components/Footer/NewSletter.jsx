@@ -19,7 +19,7 @@ const NewSletter = () => {
   };
   return (
     <>
-      <h5>Nuestro newsletter</h5>
+      <h4>Nuestro newsletter</h4>
       <p>¡Suscribite para recibir todas las novedades!</p>
       <form
         className="d-flex flex-column align-items-start gap-2"
