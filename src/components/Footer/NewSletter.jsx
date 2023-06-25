@@ -12,7 +12,7 @@ const NewSletter = () => {
   const registro = (data) => {
     Swal.fire({
       icon: "success",
-      html: `<h4>Gracias por sumarte ${data.name}!</h4>`,
+      html: `<p>Gracias por sumarte ${data.name}!</p>`,
       confirmButtonColor: "black",
     });
     reset();
@@ -30,10 +30,17 @@ const NewSletter = () => {
           name="name"
           placeholder="Nombre"
           autoComplete="on"
-          {...register("name", { required: true })}
+          {...register("name", { required: true, maxLength: 15 })}
         />
         {errors.name?.type === "required" && (
-          <p className="mb-0 text-warning">*Complete el campo</p>
+          <div className="alert alert-danger p-1 text-center">
+            <p className="m-0">Complete el campo</p>
+          </div>
+        )}
+        {errors.name?.type === "maxLength" && (
+          <div className="alert alert-danger p-1 text-center">
+            <p className="m-0">Hasta 15 carácteres permitidos</p>
+          </div>
         )}
         <input
           type="email"
@@ -47,12 +54,14 @@ const NewSletter = () => {
           })}
         />
         {errors.email?.type === "required" && (
-          <p className="mb-0 text-warning">*Complete el campo</p>
+          <div className="alert alert-danger p-1 text-center">
+            <p className="m-0">Complete el campo</p>
+          </div>
         )}
         {errors.email?.type === "pattern" && (
-          <p className="mb-0 text-warning">
-            *Formato no válido, vuelva a intentar
-          </p>
+          <div className="alert alert-danger p-1 text-center">
+            <p className="m-0">Formato no válido, vuelva a intentar</p>
+          </div>
         )}
         <button type="submit" className="btn-style">
           Registrarme

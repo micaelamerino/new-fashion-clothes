@@ -3,7 +3,7 @@ import Map from "../components/Map/Map";
 
 const Contact = () => {
   return (
-    <main className="d-flex flex-wrap justify-content-evenly m-3 align-items-center">
+    <main className="navbar-separation d-flex flex-wrap justify-content-evenly  align-items-center">
       <ContactForm />
       <Map/>
     </main>

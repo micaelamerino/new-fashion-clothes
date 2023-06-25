@@ -1,5 +1,4 @@
 import "./Footer.css";
-import Navigation from "./Navigation";
 import Information from "./Information";
 import ContactMeans from "./ContactMeans";
 import NewSletter from "./NewSletter";
@@ -16,11 +15,8 @@ const Footer = () => {
         <section>
           <NewSletter />
         </section>
-        <section>
-          <Navigation />
-        </section>
       </div>
-      <div className="text-center mt-3 pt-3 bg-dark text-light">
+      <div className="copy-footer text-center mt-3 pt-3 text-light">
         <p>Todos los derechos reservados &copy; New Fashion Clothes </p>
       </div>
     </footer>

@@ -9,7 +9,7 @@ h5 {
 p,
 a,
 label,
-button {
+button{
     font-family: 'Arbutus Slab', serif;
 }
 
@@ -20,6 +20,16 @@ button {
     padding: 5px 12px 8px 12px;
 }
 
-.btn-style:hover{
+.btn-style:hover {
     background: linear-gradient(to right, #0f2027e5, #203a43ee, #2c5364ee);
+}
+
+.navbar-separation{
+    padding-top: 120px;
+}
+
+@media screen and (min-width: 992px){
+    .navbar-separation{
+        padding-top: 135px;
+    }
 }

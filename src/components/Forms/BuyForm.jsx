@@ -41,8 +41,8 @@ const BuyForm = () => {
       const col = collection(db, "orders");
       const order = await addDoc(col, form);
       Swal.fire({
-        title: `Gracias ${form.buyer.name.toUpperCase()}`,
-        text: `Su orden de compra es: ${order.id}`,
+        title: `<h4>Gracias ${form.buyer.name}</h4>`,
+        html: `<p>Su orden de compra es: ${order.id}</p>`,
         confirmButtonColor: "black",
       });
       setCart([]);
@@ -106,10 +106,7 @@ const BuyForm = () => {
   };
 
   return (
-    <form
-      className="form-buy d-flex flex-column gap-2"
-      onSubmit={handleSubmit}
-    >
+    <form className="form-buy d-flex flex-column gap-2" onSubmit={handleSubmit}>
       <div className="d-flex flex-column gap-2">
         <label htmlFor="name">Nombre</label>
         <input
@@ -120,7 +117,7 @@ const BuyForm = () => {
           autoFocus
         />
         {errors.name && (
-          <div className="alert alert-danger p-1 text-center">
+          <div className="alert alert-danger p-1">
             <p className="m-0">{errors.name}</p>
           </div>
         )}
@@ -188,8 +185,10 @@ const BuyForm = () => {
         </p>
       </div>
       <div className="d-flex justify-content-center gap-1">
-        <ReturnButton/>
-        <button type="submit" className="btn-style">Comprar</button>
+        <ReturnButton />
+        <button type="submit" className="btn-style">
+          Comprar
+        </button>
       </div>
     </form>
   );

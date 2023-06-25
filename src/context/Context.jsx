@@ -56,7 +56,6 @@ const Datos = ({ children }) => {
     });
   };
 
-  //Total a pagar
   const total = cart.reduce((acc, e) => acc + e.price * e.quantity, 0);
 
   return (

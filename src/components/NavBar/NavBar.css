@@ -1,8 +1,12 @@
-.nav {
+.nav-bar {
     background-image: url(./fondo-nav.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding:15px 0
 }
 
 .logo {
@@ -16,31 +20,22 @@
     color: #fff;
 }
 
-.navbar-toggler {
-    background-color: #fff;
+.links-nav {
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 5px;
 }
 
-.me-auto a {
+.links-nav a {
     color: #fff;
     text-decoration: none;
 }
 
+
 @media screen and (min-width: 992px) {
     .logo {
         font-size: 2rem;
-    }
-
-    .me-auto {
-        display: flex;
-        gap: 100px;
-        margin-bottom: 20px;
-
-    }
-
-    .container-navbar {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        margin-top: 10px;
     }
 }

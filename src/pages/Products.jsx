@@ -33,11 +33,11 @@ const Products = () => {
   };
 
   return (
-    <main className="container d-flex flex-column flex-wrap mt-2">
+    <main className="navbar-separation container d-flex flex-column flex-wrap">
       <div>
         <h1>Colección otoño-invierno </h1>
         <section className="d-flex flex-wrap gap-1 mb-3">
-          <h4>Aplicar filtro</h4>
+          <h4>¿Qué buscás?</h4>
           <div className="d-flex flex-wrap gap-1 justify-content-start">
             <button type="button" className="btn-style" onClick={allProducts}>
               Ver todo

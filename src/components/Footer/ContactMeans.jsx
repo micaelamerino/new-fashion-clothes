@@ -1,7 +1,7 @@
-import phone from "./phone.webp";
-import email from "./email.webp";
-import instagram from "./instagram.webp";
-import map from "./map.webp";
+import phone from "./phone.svg";
+import email from "./email.svg";
+import instagram from "./instagram.svg";
+import map from "./map.svg";
 const ContactMeans = () => {
   return (
     <>

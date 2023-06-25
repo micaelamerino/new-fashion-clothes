@@ -18,7 +18,7 @@ const Details = () => {
   }, [data, id]);
 
   return (
-    <>
+    <section className="navbar-separation">
       {detalles && (
         <article className="details-content d-flex flex-wrap gap-5 justify-content-center align-items-center text-center m-2">
           <div>
@@ -45,7 +45,7 @@ const Details = () => {
           </div>
         </article>
       )}
-    </>
+    </section>
   );
 };
 

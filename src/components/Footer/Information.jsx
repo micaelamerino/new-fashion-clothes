@@ -14,6 +14,7 @@ const Information = () => {
               src={banelco}
               alt="Imagen de la tarjeta 'Banelco'"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="img-conteiner">
@@ -21,16 +22,23 @@ const Information = () => {
               src={amex}
               alt="Imagen de la tarjeta 'American Expres'"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="img-conteiner">
-            <img src={visa} alt="Imagen de la tarjeta 'VISA'" loading="lazy" />
+            <img
+              src={visa}
+              alt="Imagen de la tarjeta 'VISA'"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="img-conteiner">
             <img
               src={mastercard}
               alt="Imagen de la tarjeta 'Mastercard'"
               loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -42,6 +50,7 @@ const Information = () => {
             src={oca}
             alt="Imagen del medio de pago por 'OCA'"
             loading="lazy"
+            decoding="async"
           />
         </div>
       </div>

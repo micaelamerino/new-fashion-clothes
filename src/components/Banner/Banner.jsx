@@ -1,10 +1,10 @@
 import "./Banner.css";
-import send from "./send.webp";
-import card from "./card.webp";
-import shield from "./shield.webp";
+import send from "./send.svg";
+import card from "./card.svg";
+import shield from "./shield.svg";
 const Banner = () => {
   return (
-    <section className="banner-container p-2 m-1 rounded d-flex flex-wrap">
+    <section className="banner-container m-1 p-2 rounded d-flex flex-wrap">
       <div className="d-flex align-items-center gap-3">
         <img src={send} alt="Icono de entrega a domicilio" />
         <p className="m-0">¡Hacemos envíos a todo el país!</p>

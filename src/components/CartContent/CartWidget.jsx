@@ -1,4 +1,4 @@
-import cart from "./cart.webp";
+import cart from "./cart.svg";
 import CartCounter from "./CartCounter";
 const CartWidget = () => {
   return (

@@ -1,17 +1,23 @@
 import { useContext, lazy, Suspense } from "react";
 import CartEmpty from "./CartEmpty";
-const CartProduct = lazy(()=>import("./CartProduct"))
+const CartProduct = lazy(() => import("./CartProduct"));
 import { Context } from "../../context/Context";
 
 const CartContent = () => {
   const { cart } = useContext(Context);
 
   return (
-    <main className="d-flex flex-column flex-wrap text-center">
+    <main className="navbar-separation container d-flex flex-column flex-wrap text-center">
       <div className="m-3">
         <h1>Carrito de compras</h1>
       </div>
-      {cart?.length > 0 ? <Suspense fallback={<h3>Cargando...</h3>}><CartProduct /></Suspense> : <CartEmpty />}
+      {cart?.length > 0 ? (
+        <Suspense fallback={null}>
+          <CartProduct />
+        </Suspense>
+      ) : (
+        <CartEmpty />
+      )}
     </main>
   );
 };
