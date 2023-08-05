@@ -6,7 +6,7 @@ const Home = () => {
     <div className="navbar-separation">
       <Banner />
       <header className="text-center mt-2">
-        <img className="w-75" src={Header} />
+        <img className="w-100" src={Header} alt="Imagen de encabezado" loading="lazy" />
       </header>
       <Featured />
     </div>

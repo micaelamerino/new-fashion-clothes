@@ -1,35 +1,38 @@
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Alegreya Sans SC', sans-serif;
+@font-face {
+    font-family: Lisu;
+    src: url("./fonts/LisuBosa-Regular.ttf");
 }
 
-p,
-a,
-label,
-button{
-    font-family: 'Arbutus Slab', serif;
+@font-face {
+    font-family: Abril;
+    src: url("./fonts/AbrilFatface-Regular.ttf");
+}
+
+body {
+    font-family: Lisu;
+    font-display: swap;
 }
 
 .btn-style {
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background-color: #0f2027e5;
+    box-shadow: inset 0px -5px 27px -1px #71babd;
     color: #fff;
     border-style: none;
     padding: 5px 12px 8px 12px;
 }
 
 .btn-style:hover {
-    background: linear-gradient(to right, #0f2027e5, #203a43ee, #2c5364ee);
+    box-shadow: inset 0px -5px 27px -1px #0f2027;
+    transition: 0.53s;
+
 }
 
-.navbar-separation{
+.navbar-separation {
     padding-top: 120px;
 }
 
-@media screen and (min-width: 992px){
-    .navbar-separation{
+@media screen and (min-width: 992px) {
+    .navbar-separation {
         padding-top: 135px;
     }
 }

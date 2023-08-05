@@ -36,7 +36,7 @@ const Details = () => {
             <p>Color: {detalles.color}</p>
             <p>Marca: {detalles.brand}</p>
             <p>
-              <b>$ {detalles.price}</b>
+              <b className="fs-4">$ {detalles.price}</b>
             </p>
             <div className="d-flex gap-1">
               <AddButton product={detalles} />

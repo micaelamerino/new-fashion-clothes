@@ -65,7 +65,7 @@ const Products = () => {
               <Image image={p.image} name={p.name} />
               <h3>{p.name}</h3>
               <p>
-                <b>$ {p.price}</b>
+                <b className="fs-4">$ {p.price}</b>
               </p>
               <div className="d-flex justify-content-center gap-1 mb-2">
                 <AddButton product={p} />

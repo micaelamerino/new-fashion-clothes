@@ -32,7 +32,7 @@ const CartProduct = () => {
               <Image image={p.image} name={p.name} />
               <h3>{p.name}</h3>
               <p>
-                <b>$ {p.price * p.quantity}</b>
+                <b className="fs-4">$ {p.price * p.quantity}</b>
               </p>
               <CartQuantity product={p} />
             </article>
@@ -40,11 +40,13 @@ const CartProduct = () => {
       </section>
       <div>
         {total < minValue && (
-          <p style={{ color: "red", marginBottom: 0 }}>
-            *El monto mínimo de compra es de $15000
+          <p className="text-danger mb-0">
+            <b>*El monto mínimo de compra es de $15000</b>
           </p>
         )}
-        <h3>El monto total es de: $ {total}</h3>
+        <h3>
+          El monto total es de: <b>$ {total}</b>
+        </h3>
       </div>
       <div className="d-flex justify-content-center mb-3  gap-1">
         <button

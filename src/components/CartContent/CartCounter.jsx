@@ -5,7 +5,7 @@ const CartCounter = () => {
   const [counter, setCounter] = useState();
 
   useEffect(() => {
-    cart.length > 0 ? setCounter(cart.length) : setCounter("");
+    cart.length > 0 ? setCounter(cart.length) : setCounter(0);
   }, [cart]);
 
   return (

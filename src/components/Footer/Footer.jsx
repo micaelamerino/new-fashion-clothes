@@ -16,7 +16,7 @@ const Footer = () => {
           <NewSletter />
         </section>
       </div>
-      <div className="copy-footer text-center mt-3 pt-3 text-light">
+      <div className="copy-footer text-center mt-3 pt-3 px-2 text-light">
         <p>Todos los derechos reservados &copy; New Fashion Clothes </p>
       </div>
     </footer>

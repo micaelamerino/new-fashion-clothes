@@ -13,10 +13,10 @@ const Featured = () => {
   }, [data]);
 
   return (
-    <main className="container text-center">
+    <main className="container text-center mt-4">
       <h1>Productos Destacados</h1>
-      <p>¡Los últimos ingresos están aquí!</p>
-      <section className="row">
+      <h2>¡Últimos ingresos!</h2>
+      <section className="row mt-4">
         {newProducts.length > 0 ? (
           newProducts.map((p) => (
             <article
