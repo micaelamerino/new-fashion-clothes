@@ -1,6 +1,6 @@
 import Banner from "../components/Banner/Banner";
 import Featured from "../components/Featured/Featured";
-import Header from "./header.jpg";
+import Header from "./header.webp";
 const Home = () => {
   return (
     <div className="navbar-separation">
